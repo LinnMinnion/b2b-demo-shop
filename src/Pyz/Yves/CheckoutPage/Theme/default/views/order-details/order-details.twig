@@ -1,0 +1,35 @@
+{% extends template('page-layout-checkout', 'CheckoutPage') %}
+
+{% define data = {
+    backUrl: _view.previousStepUrl,
+    forms: {
+        orderDetails: _view.orderDetailsForm
+    },
+
+    title: 'Order details' | trans
+} %}
+
+{% block content %}
+    {% embed molecule('form') with {
+        class: 'box',
+        data: {
+            form: data.forms.orderDetails,
+            options: {
+                attr: {
+                    id: 'order-details-form'
+                }
+            },
+            submit: {
+                enable: true,
+                text: 'general.next.button' | trans
+            },
+            cancel: {
+                enable: true,
+                url: data.backUrl,
+                text: 'general.back.button' | trans
+            }
+        }
+    } only %}
+
+    {% endembed %}
+{% endblock %}
