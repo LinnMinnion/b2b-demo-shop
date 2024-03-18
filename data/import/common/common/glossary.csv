@@ -3857,6 +3857,10 @@ store_widget.switcher.store,Store:,en_US
 store_widget.switcher.store,Shop:,de_DE
 store.validation.store_not_found,"Store not found",en_US
 store.validation.store_not_found,"Store nicht gefunden",de_DE
+customer.order.order_name,"Bestelltitel",de_DE
+customer.order.order_name,"Order title",en_US
+customer.order.name_order,"Bestellung benennen",de_DE
+customer.order.name_order,"Name order",en_US
 checkout.step.order_details.title,"Bestelldetails",de_DE
 checkout.step.order_details.title,"Order details",en_US
 general.next.button,"next",en_US
