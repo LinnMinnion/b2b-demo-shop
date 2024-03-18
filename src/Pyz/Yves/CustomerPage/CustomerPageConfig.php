@@ -12,6 +12,19 @@ use SprykerShop\Yves\CustomerPage\CustomerPageConfig as SprykerCustomerPageConfi
 class CustomerPageConfig extends SprykerCustomerPageConfig
 {
     /**
+     * @uses \Spryker\Shared\Sales\SalesConfig::ORDER_SEARCH_TYPES
+     *
+     * @var array
+     */
+    protected const ORDER_SEARCH_TYPES = [
+        'all',
+        'orderReference',
+        'orderName',
+        'itemName',
+        'itemSku',
+    ];
+
+    /**
      * @uses \Pyz\Zed\Customer\CustomerConfig::MIN_LENGTH_CUSTOMER_PASSWORD
      *
      * @var int
